@@ -111,4 +111,7 @@ dmypy.json
 .pyre/
 
 # Additional
-model.pth
+
+models/
+
+requirements2.txt
