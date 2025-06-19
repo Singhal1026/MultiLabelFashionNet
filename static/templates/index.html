@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MultiLabel FashionNet - Home</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MultiLabel FashionNet</h1>
+            <p>Upload a fashion image to get predictions from our model.</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>Upload Image</h2>
+                <form id="image-form">
+                    <input type="file" id="image-input" accept="image/*" capture="environment">
+                    <div id="preview-container">
+                        <img id="image-preview" src="#" alt="Image Preview" style="display:none;">
+                    </div>
+                    <button type="submit">Predict</button>
+                </form>
+            </section>
+
+            <section class="card">
+                <h2>Model Prediction</h2>
+                <div id="prediction-result">
+                    <p>
+                        {% if prediction %}
+                            <h2>Predicted Labels:</h2>
+                            <ul id="predicted-labels">
+                                <li><strong>Article Type:</strong> {{ prediction.articleType }}</li>
+                                <li><strong>Color:</strong> {{ prediction.baseColour }}</li>
+                                <li><strong>Season:</strong> {{ prediction.season }}</li>
+                                <li><strong>Gender:</strong> {{ prediction.gender }}</li>
+                            </ul>
+                        {% endif %}
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
