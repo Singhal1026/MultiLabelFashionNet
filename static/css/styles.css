@@ -97,9 +97,4 @@ button:hover {
     text-align: center;
 }
 
-#predicted-labels {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-top: 20px;
-    text-align: left;
-}
+
