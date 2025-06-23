@@ -11,3 +11,4 @@ joblib
 requests
 fastapi
 uvicorn
+python-multipart
