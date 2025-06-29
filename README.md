@@ -1,9 +1,13 @@
 # 🧥 MultiLabel FashionNet
 
 A web application that classifies fashion images into four attributes:  
-👕 **Article Type**, 🎨 **Base Colour**, 🌦️ **Season**, and 🧑‍🤝‍🧑 **Gender** — using a fine-tuned **Vision Transformer (ViT)** model served via **FastAPI**.
-
----
+<ul>
+<li>👕 <b>Article Type</b></li>
+<li>🎨 <b>Base Colour</b> </li>
+<li>🌦️ <b>Season</b> </li>
+<li>🧑‍🤝‍🧑 <b>Gender</b> </li> 
+</ul>
+— using a fine-tuned <b>Vision Transformer (ViT)</b> model served via <b>FastAPI</b>.
 
 ## 🚀 Tech Stack
 
